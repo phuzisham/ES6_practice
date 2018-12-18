@@ -1,7 +1,7 @@
 // for loop Example
 
-var numbers = [ 10, 20, 30 ];
-var sum = 0;
+let numbers = [ 10, 20, 30 ];
+let sum = 0;
 
 for (var i = 0; i < numbers.length; i++) {
   sum += numbers[i];
@@ -15,7 +15,7 @@ numbers.reduce(function(sum, number) {
 
 // example 2
 
-var primaryColors = [
+let primaryColors = [
   { color: 'red' },
   { color: 'yellow' },
   { color: 'blue' }
@@ -40,3 +40,16 @@ function balancedParens(string) {
 
 balancedParens(")()("); // unbalanced
 balancedParens("((()))"); // balanced
+
+// example 4 unique numbers
+
+function unique(array) {
+  return array.reduce(function(newArray, currentNumber) {
+    if (!newArray.find(function(element) {
+      return element === currentNumber
+    })) {
+      newArray.push(currentNumber);
+    }
+    return newArray;
+  }, []);
+}

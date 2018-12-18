@@ -1,6 +1,6 @@
 // Basic old school ES5 for loop example
 
-var colors = [ 'red,' 'blue', 'green' ];
+let colors = [ 'red,' 'blue', 'green' ];
 
 for (var i = 0; i < colors.length; i++) {
   console.log(colors[i]);
@@ -14,8 +14,8 @@ colors.forEach(function(color) {
 
 // Array helper method forEach 2
 
-var numbers = [1, 2, 3, 4,5];
-var sum = 0;
+let numbers = [1, 2, 3, 4,5];
+let sum = 0;
 
 numbers.forEach(function(number) {
   sum += number;
@@ -31,13 +31,13 @@ numbers.forEach(adder);
 
 // Example 3
 
-var images = [
+let images = [
   { height: 10, width: 30 },
   { height: 20, width: 90 },
   { height: 54, width: 32 }
 ];
 
-var areas = [];
+let areas = [];
 
 function calcArea(image) {
   var area = image.height * image.width;

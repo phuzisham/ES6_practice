@@ -1,11 +1,11 @@
-var products = [
+let products = [
   { name: 'cucumber', type: 'vegetable', quantity: 0, price: 1 },
   { name: 'celery', type: 'vegetable', quantity: 10, price: 15 },
   { name: 'banana', type: 'fruit', quantity: 30, price: 13 },
   { name: 'orange',   type: 'fruit', quantity: 3, price: 5  }
 ];
 
-var filteredProducts = [];
+let filteredProducts = [];
 
 // ES5 Example
 
@@ -31,8 +31,8 @@ products.filter(function(product) {
 
 // ES6 example 3
 
-var post = { id: 4, title: 'New Post' };
-var comments = [
+let post = { id: 4, title: 'New Post' };
+let comments = [
   { postID: 4, content: 'awesome post' },
   { postID: 3, content: 'it was ok' },
   { postID: 4, content: 'neat' }

@@ -1,12 +1,12 @@
 // for loop Example
 
-var users = [
+let users = [
   { name: 'Jacko' },
   { name: 'Veronica'},
   { name: 'Kingsley'}
 ];
 
-var user;
+let user;
 
 for (var i = 0; i < users.length; i++) {
   if (users[i].name === 'Jacko') {
@@ -28,7 +28,7 @@ function Car(model) {
   this.model = model;
 }
 
-var cars = [
+let cars = [
   new Car('Buick'),
   new Car('Camaro'),
   new Car('Focus')
@@ -40,12 +40,12 @@ cars.find(function(car) {
 
 // Example 3
 
-var posts = [
+let posts = [
   { id: 1, title: 'New Post' },
   { id: 2, title: 'Old Post'}
 ];
 
-var comment = { postId: 1, content: 'Huh?' };
+let comment = { postId: 1, content: 'Huh?' };
 
 function postForComment(posts, comment) {
   return posts.find(function(post) {
