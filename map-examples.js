@@ -3,7 +3,7 @@
 let numbers = [1,2,3];
 let doubledNumbers = [];
 
-for (var i = 0; i < numbers.length; i++) {
+for (let i = 0; i < numbers.length; i++) {
   doubledNumbers.push(numbers[i] * 2);
 }
 

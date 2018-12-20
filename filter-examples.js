@@ -9,7 +9,7 @@ let filteredProducts = [];
 
 // ES5 Example
 
-for (var i = 0; i < products.length; i++) {
+for (let i = 0; i < products.length; i++) {
   if (products[i].type === 'fruit') {
     filteredProducts.push(products[i]);
   }

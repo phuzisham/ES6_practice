@@ -10,7 +10,7 @@ let allComputersCanRunProgram = true;
 
 let onlySomeComputersCanRunProgram = false;
 
-for (var i = 0; i < computers.length; i++) {
+for (let i = 0; i < computers.length; i++) {
   let computer = computers[i];
 
   if (computer.ram < 16) {
@@ -52,9 +52,9 @@ const birthdate = new Field("10/10/2010");
 
 username.validate() && password.validate();
 
-var fields = [username, password, birthdate];
+let fields = [username, password, birthdate];
 
-var formIsValid = fields.every(function(field) {
+let formIsValid = fields.every(function(field) {
   return field.validate();
 });
 

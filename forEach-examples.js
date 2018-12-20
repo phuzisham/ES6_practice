@@ -2,7 +2,7 @@
 
 let colors = [ 'red,' 'blue', 'green' ];
 
-for (var i = 0; i < colors.length; i++) {
+for (let i = 0; i < colors.length; i++) {
   console.log(colors[i]);
 }
 
@@ -40,7 +40,7 @@ let images = [
 let areas = [];
 
 function calcArea(image) {
-  var area = image.height * image.width;
+  let area = image.height * image.width;
   areas.push(area);
 }
 

@@ -8,7 +8,7 @@ let users = [
 
 let user;
 
-for (var i = 0; i < users.length; i++) {
+for (let i = 0; i < users.length; i++) {
   if (users[i].name === 'Jacko') {
     user=users[i];
     break;
