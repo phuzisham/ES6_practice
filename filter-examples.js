@@ -21,12 +21,22 @@ products.filter(function(product) {
   return product.type === 'fruit';
 });
 
+// fat arrow
+products.filter(product => product.type === 'fruit');
+
 // ES6 example 2 -- type is vegetable, quantity is > 0, price is < 10
 
 products.filter(function(product) {
-  return product.type ==== 'vegetable'
+  return product.type === 'vegetable'
     && product.quantity > 0
     && product.price < 10
+});
+
+// fat arrow
+products.filter(product => {
+  return product.type === 'vegetable'
+  && product.quantity > 0
+  && product.price < 10
 });
 
 // ES6 example 3

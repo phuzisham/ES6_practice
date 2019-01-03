@@ -21,20 +21,23 @@ for (let i = 0; i < computers.length; i++) {
 }
 
 // every helper
+numbers.map(num => 2 * num);
 
 computers.every(function(computer) {
   return computer.ram > 16;
-});
+}); // ^^^ returns false ^^^
 
-// ^^^ returns false ^^^
+// fat arrow
+computers.every(comp => comp.ram > 16); // ^^^ returns false ^^^
 
 // some helper
 
 computers.some(function(computer) {
   return computer.ram > 16;
-});
+}); // ^^^ returns true ^^^
 
-// ^^^ returns true ^^^
+// fat arrow
+computers.some(comp => comp.ram > 16);  // ^^^ returns true ^^^
 
 // example 2
 
