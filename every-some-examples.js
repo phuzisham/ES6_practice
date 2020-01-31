@@ -1,4 +1,4 @@
-// for loop Example
+// ES5 ------- start
 
 const computers = [
   { name: 'Apple', ram: 24 },
@@ -20,17 +20,18 @@ for (let i = 0; i < computers.length; i++) {
   }
 }
 
-// every helper
-numbers.map(num => 2 * num);
+// ES5 ------- end
+
+// ES6 ------- start
 
 computers.every(function(computer) {
   return computer.ram > 16;
-}); // ^^^ returns false ^^^
+}); // returns false
 
 // fat arrow
-computers.every(comp => comp.ram > 16); // ^^^ returns false ^^^
+computers.every(comp => comp.ram > 16); // returns false
 
-// some helper
+// some helper will return true
 
 computers.some(function(computer) {
   return computer.ram > 16;
@@ -39,7 +40,9 @@ computers.some(function(computer) {
 // fat arrow
 computers.some(comp => comp.ram > 16);  // ^^^ returns true ^^^
 
-// example 2
+// ES6 ------- end
+
+// Sample validation ------- start
 
 function Field(value) {
   this.value = value;
@@ -66,3 +69,5 @@ if  (formIsValid) {
 } else {
   // show an error message
 }
+
+// Sample validation ------- end

@@ -1,4 +1,4 @@
-// Basic old school ES5 for loop example
+// ES5 ------- start
 
 let colors = [ 'red,' 'blue', 'green' ];
 
@@ -6,30 +6,32 @@ for (let i = 0; i < colors.length; i++) {
   console.log(colors[i]);
 }
 
-// Array helper method forEach
+// ES6 ------- end
+
+// ES5 ------- start
 
 colors.forEach(function(color) {
   console.log(color);
 });
 
-// Array helper method forEach 2
+// example 2
 
 let numbers = [1, 2, 3, 4,5];
 let sum = 0;
 
 numbers.forEach(function(number) {
   sum += number;
-});
+});                               // sum = 15
 
-// Example with iterator function as a seperate function
+// example with iterator function as a seperate function
 
 function adder(number) {
   sum += number;
 }
 
-numbers.forEach(adder);
+numbers.forEach(adder);           // sum = 15
 
-// Example 3
+// example 3
 
 let images = [
   { height: 10, width: 30 },
@@ -44,4 +46,6 @@ function calcArea(image) {
   areas.push(area);
 }
 
-images.forEach(calcArea);
+images.forEach(calcArea);   // areas = [300, 1800, 1728]
+
+// ES6 ------- end

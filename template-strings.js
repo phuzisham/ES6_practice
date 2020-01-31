@@ -1,4 +1,4 @@
-// ES5
+// ES5 ------ start
 
 function getMessage() {
   const year = new Date().getFullYear();
@@ -6,7 +6,9 @@ function getMessage() {
   return "The year is " + year;
 }
 
-// ES6 back tic
+// ES5 ------ end
+
+// ES6 ------ start
 
 function getMessage() {
   const year = new Date().getFullYear();
@@ -20,7 +22,9 @@ function getMessage() {
   return `The year is ${new Date().getFullYear()}`;
 }
 
-// Post Example ES5
+// ES6 ------ end
+
+// ES5 ------ start
 
 const device_id = 7;
 const guid = 20;
@@ -28,10 +32,14 @@ const username = "user7";
 
 let data = '{"device_id":"' + device_id + '","guid":"' + guid + '","username":"' + username + '","}';
 
-// post example template literal
+// ES5 ------ end
+
+// ES6 ------ start
 
 const device_id = 7;
 const guid = 20;
 const username = "user7";
 
 let data = `{"device_id": "${device_id}", "guid": "${guid}", "username": "${username}","}`;
+
+// ES6 ------ end

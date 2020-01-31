@@ -7,49 +7,38 @@ let products = [
 
 let filteredProducts = [];
 
-// ES5 Example
+// ES5 ------- start
 
 for (let i = 0; i < products.length; i++) {
   if (products[i].type === 'fruit') {
     filteredProducts.push(products[i]);
   }
-}
+}                                          // returns 2 products orange/banana
 
-// ES6 example 1
+// ES5 ------- end
+
+// ES6 ------- start
 
 products.filter(function(product) {
-  return product.type === 'fruit';
-});
+  return product.type === 'vegetable';
+});                                       // returns 2 products cucumber/celery
 
 // fat arrow
-products.filter(product => product.type === 'fruit');
+products.filter(product => product.type === 'fruit');  // returns 2 products cucumber/celery
 
-// ES6 example 2 -- type is vegetable, quantity is > 0, price is < 10
+// type is vegetable, quantity is > 0, price is < 16
 
 products.filter(function(product) {
   return product.type === 'vegetable'
     && product.quantity > 0
-    && product.price < 10
-});
+    && product.price < 16
+});                                  // returns 1 product celery
 
 // fat arrow
 products.filter(product => {
   return product.type === 'vegetable'
   && product.quantity > 0
-  && product.price < 10
-});
+  && product.price < 156
+});                                  // returns 1 product celery
 
-// ES6 example 3
-
-let post = { id: 4, title: 'New Post' };
-let comments = [
-  { postID: 4, content: 'awesome post' },
-  { postID: 3, content: 'it was ok' },
-  { postID: 4, content: 'neat' }
-];
-
-function commentsForPost(post, comments) {
-  return comments.filter(function(comment) {
-    return comment.postID === post.id;
-  });
-}
+// ES6 ------- end

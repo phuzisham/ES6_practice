@@ -1,5 +1,3 @@
-// for loop Example
-
 let users = [
   { name: 'Jacko' },
   { name: 'Veronica'},
@@ -8,6 +6,8 @@ let users = [
 
 let user;
 
+// ES5 ------- start
+
 for (let i = 0; i < users.length; i++) {
   if (users[i].name === 'Jacko') {
     user=users[i];
@@ -15,11 +15,12 @@ for (let i = 0; i < users.length; i++) {
   }
 }
 
+// ES5 ------- end
 
-// helper method
+// ES6 ------- start
 
 users.find(function(user) {
-  return user.name === 'Alex';
+  return user.name === 'Veronica';
 });
 
 // Example 2
@@ -52,3 +53,5 @@ function postForComment(posts, comment) {
     return post.id === comment.postId;
   });
 }
+
+// ES6 ------- end

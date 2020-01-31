@@ -1,17 +1,20 @@
-// for loop Example
+// ES5 ------- start
 
 let numbers = [ 10, 20, 30 ];
 let sum = 0;
 
 for (let i = 0; i < numbers.length; i++) {
   sum += numbers[i];
-}
+}                                         // sum = 60
 
-// example 1 !reduce uses an initial value! marked as sum in this case
+// ES5 ------- end
+
+// ES6 ------- start
+// !reduce uses an initial value! marked as sum in this case
 
 numbers.reduce(function(sum, number) {
   return sum + number;
-}, 0);
+}, 0);                                // returns 60
 
 // example 2
 
@@ -25,7 +28,7 @@ primaryColors.reduce(function(acc, primaryColor) {
   acc.push(primaryColor.color);
 
   return acc;
-}, []);
+}, []);                      // returns ["red", "yellow", "blue"]
 
 // example 3 balanced parentheses?
 
@@ -38,8 +41,8 @@ function balancedParens(string) {
   }, 0);
 }
 
-balancedParens(")()("); // unbalanced
-balancedParens("((()))"); // balanced
+balancedParens(")()("); // false
+balancedParens("((()))"); // true
 
 // example 4 unique numbers
 
@@ -53,3 +56,5 @@ function unique(array) {
     return newArray;
   }, []);
 }
+
+// ES6 ------- end
